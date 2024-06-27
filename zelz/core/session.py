@@ -1,5 +1,4 @@
 import sys
-import time
 
 from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
 from telethon.errors.rpcerrorlist import FloodWaitError
@@ -50,6 +49,5 @@ try:
     ).start(bot_token=Config.TG_BOT_TOKEN)
 except FloodWaitError as e:
     LOGS.error(f"FloodWaitError: فلود وايت - يرجى الانتظار لـ {e.seconds} ثانية.")
-    time.sleep(e.seconds)
 except (AccessTokenExpiredError, AccessTokenInvalidError):
     LOGS.error("توكن البوت غير صالح قم باستبداله بتوكن جديد من بوت فاذر")
