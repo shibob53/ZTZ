@@ -1,4 +1,3 @@
-import contextlib
 import sys, asyncio
 import zelz
 from zelz import BOTLOG_CHATID, HEROKU_APP, PM_LOGGER_GROUP_ID
@@ -66,10 +65,14 @@ async def startup_process():
 zedub.loop.run_until_complete(startup_process())
 
 if len(sys.argv) not in (1, 3, 4):
-    with contextlib.suppress(ConnectionError):
-        zedub.disconnect()
+    zedub.disconnect()
 elif not ZTcheck.sucess:
-    with contextlib.suppress(ConnectionError):
+    try:
         zedub.run_until_disconnected()
+    except ConnectionError:
+        pass
 else:
-    zedub.run_until_disconnected()
+    try:
+        zedub.run_until_disconnected()
+    except ConnectionError:
+        pass
