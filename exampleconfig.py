@@ -6,7 +6,7 @@ class Development(Config):
     APP_ID = 6 #ضع كود الايبي ايدي الصغيـر مكان الرقم 6 نسخ لصق   
     API_HASH = "ضع كود الايبي هاش"
     ALIVE_NAME = "اسم حسابك التلي"
-    DB_URI = "رابـط التخـزين الخـاص بك"
+    DB_URI = "postgresql://postgres:hFQbrQKWpYRqwPOvFccHonzPsQarhaGr@roundhouse.proxy.rlwy.net:28541/railway"
     STRING_SESSION = "كود تيرمــكس"
     TG_BOT_TOKEN = "توكـن البـوت الخـاص بك"
     PRIVATE_GROUP_BOT_API_ID = -100  # ضـع ايـدي كـروب السجـل بجـانب العـدد -100 لا تمسـح العـدد هـذا
