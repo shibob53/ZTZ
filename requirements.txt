@@ -37,7 +37,6 @@ lyricsgenius
 markdown
 motor
 moviepy
-nekos.py
 opentele
 Pillow
 prettytable
