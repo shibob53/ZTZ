@@ -21,7 +21,7 @@ class Development(Config):
     #TG_BOT_TOKEN = "توكـن البـوت الخـاص بك"
     TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN")
     
-    PRIVATE_GROUP_BOT_API_ID = -1004287965595  # ضـع ايـدي كـروب السجـل بجـانب العـدد -100 لا تمسـح العـدد هـذا
+    PRIVATE_GROUP_BOT_API_ID = -1002211195485  # ضـع ايـدي كـروب السجـل بجـانب العـدد -100 لا تمسـح العـدد هـذا
     COMMAND_HAND_LER = "."  # اتركهــا كمـا هـي
     SUDO_COMMAND_HAND_LER = "."  # اتركهــا كمـا هـي
     TZ = "Asia/Baghdad"  # اتركهــا كمـا هـي
