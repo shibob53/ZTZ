@@ -16,4 +16,3 @@ class Development(Config):
     COMMAND_HAND_LER = "."  # اتركهــا كمـا هـي
     SUDO_COMMAND_HAND_LER = "."  # اتركهــا كمـا هـي
     TZ = "Asia/Baghdad"  # اتركهــا كمـا هـي
-'''
