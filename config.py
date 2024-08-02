@@ -1,5 +1,6 @@
 from sample_config import Config
 #config = Config()
+import os 
 #from sample_config import Config
 from dotenv import load_dotenv
 load_dotenv()
